@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
 
+/* Header */
 header {
     background-color: #14488C;
     padding-top: 30px;
@@ -30,3 +31,42 @@ nav ul li a:active {
     padding-bottom: 20px;
 }
 
+/* main */
+
+main {
+    margin: auto;
+    margin-top: 100px;
+    width: 600px;
+    height: 0px;
+    font-family: "Roboto Flex";
+    text-align: center;
+}
+
+main h1 {
+    font-size: 2em;
+    font-weight: 400;
+}
+
+main p {
+    font-size: 1.1em;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0d2e5a;
+    margin-top: 68vh;
+    height: 100px;
+}
+
+footer p a {
+    color: white;
+    font-family: "Roboto Flex";  
+}
+
+footer p a:hover {
+    color: #a8a8a8
+}
