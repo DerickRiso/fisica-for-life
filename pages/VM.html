@@ -6,7 +6,8 @@
     <title>doc</title>
 
     <link rel="stylesheet" href="../src/css/reset.css">
-    <link rel="stylesheet" href="../src/css/header-footer.css">
+    <link rel="stylesheet" href="../src/css/index.css">
+    <link rel="stylesheet" href="../src/css/vm.css">
 </head>
 <body>
     <header>
@@ -30,6 +31,36 @@
             </ul>
         </nav>
     </header>
+
+    <section>
+        <div>
+            <div class="posicao">
+                <label for="pos-final">Posição final</label>
+                <input type="number" id="pos-final">
+
+                <label for="pos-inicial">Posição inicial</label>
+                <input type="number" id="pos-inicial">
+            </div>
+
+            <div class="tempo">
+                <label for="temp-final">Tempo final</label>
+                <input type="number" id="temp-final">
+                
+                <label for="temp-inicial">Tempo inicial</label>
+                <input type="number" id="temp-inicial">
+            </div>
+            
+            <div class="velocidade-media">
+                <label for="var-tempo">Variação de tempo</label>
+                <input type="number" id="var-tempo">
+
+                <label for="var-posicao">Variação de posição</label>
+                <input type="number" id="var-posicao">
+
+                <p id="res"></p>
+            </div>
+        </div>
+    </section>
 
     <footer>
         <p>
