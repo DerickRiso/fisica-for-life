@@ -1,4 +1,56 @@
 section div {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 100px;
+}
+
+.campo {
+    flex-direction: column;
+}
+
+.var-posicao, .var-tempo {
+    margin: auto;
+}
+
+label {
+    font-size: 1.5em;
+    font-family: "Roboto Flex";
+}
+
+input {
+    padding: 10px 30px;
+    background-color: #b9e8fa;
+    border: 1px solid rgb(150, 208, 255);
+    border-radius: 10px;
+    transition: 0.5s;
+    box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.212);
+}
+
+input:hover {
+    background-color: #4bc6f7;
+    border: 1px solid transparent;
+}
+
+h1{
+    font-family: "Roboto Flex";
+    font-weight: 500;
+    position: absolute;
+    font-size: 2em;
+    left: calc(50% - 504/2);
+    top: 20%;
+    text-align: center;
+}
+
+button {
+    font-family: "Roboto Flex";
+    font-weight: 500;
+    font-size: 1.5em;
+    padding: 10px 20px;
+    margin-left: calc(50% - 130px/2);
+    border-radius: 5%;
+    border: 0;
+    cursor: pointer;
 }

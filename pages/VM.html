@@ -34,32 +34,51 @@
 
     <section>
         <div>
-            <div class="posicao">
-                <label for="pos-final">Posição final</label>
-                <input type="number" id="pos-final">
-
-                <label for="pos-inicial">Posição inicial</label>
-                <input type="number" id="pos-inicial">
+            <h1>Insira a posição e tempo final e inicial do objeto</h1>
+            <div class="var-posicao">
+                <div class="campo">
+                    <label for="pos-final">Posição final</label>
+                    <input type="number" id="pos-final">
+                </div>
+                
+                <div class="campo">
+                    <label for="pos-inicial">Posição inicial</label>
+                    <input type="number" id="pos-inicial">
+                </div>       
             </div>
 
-            <div class="tempo">
-                <label for="temp-final">Tempo final</label>
-                <input type="number" id="temp-final">
+            <select id="distancia">
+                <option value="M">Metros</option>
+                <option value="K">Kilômetros</option>
+            </select>
+
+            <select id="tempo">
+                <option value="S">Segundos</option>
+                <option value="M">Minutos</option>
+                <option value="H">Horas</option>
+            </select>
+
+            <div class="var-tempo">
                 
-                <label for="temp-inicial">Tempo inicial</label>
-                <input type="number" id="temp-inicial">
+
+                <div class="campo">
+                    <label for="temp-final">Tempo final</label>
+                    <input type="number" id="temp-final">
+                </div>
+                
+                <div class="campo"> 
+                    <label for="temp-inicial">Tempo inicial</label>
+                    <input type="number" id="temp-inicial">
+                </div>
             </div>
             
-            <div class="velocidade-media">
-                <label for="var-tempo">Variação de tempo</label>
-                <input type="number" id="var-tempo">
+            
 
-                <label for="var-posicao">Variação de posição</label>
-                <input type="number" id="var-posicao">
-
-                <p id="res"></p>
-            </div>
+            
+            
         </div>
+        <button onclick="calcularVelMedia()">Calcular</button>
+        <p id="res"></p>
     </section>
 
     <footer>
@@ -67,3 +86,6 @@
             <a href="https://github.com/DerickRiso">Derick Darlan Riso Santana &copy</a> 
         </p>
     </footer>
+
+    <script src="../src/js/vm.js"></script>
+</body>
