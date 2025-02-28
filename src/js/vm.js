@@ -5,7 +5,6 @@ const finPosicao = document.getElementById('pos-final')
 const res = document.getElementById('res')
 
 function calcularVelMedia() {
-    // Calculando a variação e velocidade
     let varTempo = finTempo.value - initTempo.value;
     let varPosicao = finPosicao.value - initPosicao.value;
     let velocidade = varTempo / varPosicao;
@@ -14,7 +13,6 @@ function calcularVelMedia() {
 
     velocidade = verificarExcecoes(varTempo, varPosicao, velocidade);
 
-    // Saída do resultado
     medida = formatarMensagem();
     res.innerHTML = `A velocidade média é: ${velocidade} ${medida}`;
 }
